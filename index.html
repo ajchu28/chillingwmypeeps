@@ -1,16 +1,142 @@
 <style>
-
   body {
     background-color: #081c5c;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  
-  img {
-    
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
 
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  .overlay {
+    position: absolute;
+    top: center;
+    bottom: 0;
+    left: 0;
+    right: center;
+    border-radius: 30% 30% 30% 30% / 60% 60% 60% 60%;
+    height: 15%;
+    width: 50%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #FFFFFF;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container:hover .overlay {
+    opacity: 75%;
+  }
+  
+  
+  .text {
+    position: relative;
+    font-size: 2.5vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .header_text {
+    position: absolute;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    top: 5%;
+    left: 5%;
+    font-size: 6vw;
+    color: black;
+    background-color: white;
+    padding: 15px;
+  }
 </style>
 
-<img src="emu.png" alt="emu">
+
+<div class="header">
+  <div class="header_text">
+    
+    <a href="https://chillingwithmypeeps.wordpress.com/">Chilling with my Peeps</a>
+  </div>
+</div>
+<div class="column">
+  <div class="row">
+    <div class="container">
+      <img src="emu.png" alt="Emu" style="width:75%">
+      <div class="overlay">
+        <div class="text">
+          Emu
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <img src="pinto.png" alt="Pinto" style="width:65%">
+      <div class="overlay">
+        <div class="text">
+          Pinto
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="column">
+  <div class="row">
+    <div class="container">
+      <img src="dawn.png" alt="Dawn" style="width:75%">
+      <div class="overlay">
+        <div class="text">
+          Dawn
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <img src="sunny.png" alt="Sunny" style="width:75%">
+      <div class="overlay">
+        <div class="text">
+          Sunny
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="column">
+  <div class="row">
+    <div class="container">
+      <img src="twilight.png" alt="Twilight" style="width:75%">
+      <div class="overlay">
+        <div class="text">
+          Twilight
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <img src="birch.png" alt="Birch" style="width:100%">
+      <div class="overlay">
+        <div class="text">
+          Birch
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
